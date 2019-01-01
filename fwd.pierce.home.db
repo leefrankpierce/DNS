@@ -1,0 +1,31 @@
+$TTL 86400
+@   IN  SOA     primary.pierce.home. root.pierce.home. (
+2014112511  ;Serial
+3600        ;Refresh
+1800        ;Retry
+604800      ;Expire
+86400       ;Minimum TTL
+)
+;Name Server Information
+@      IN  NS      master.pierce.home.
+;IP address of Name Server
+dns IN  A       192.168.1.200
+;Mail exchanger
+;itzgeek.local. IN  MX 10   mail.itzgeek.local.
+;A - Record HostName To Ip Address
+ilo         IN  A       192.168.1.99
+r900         IN  A       192.168.1.100
+homestore    IN  A       192.168.1.101
+ansible    IN  A       192.168.1.135
+master    IN  A       192.168.1.140
+infra1    IN  A       192.168.1.145
+app1    IN  A       192.168.1.141
+app2    IN  A       192.168.1.142
+app3    IN  A       192.168.1.143
+web    IN  A       192.168.1.105
+docker    IN  A       192.168.1.110
+jenkins    IN  A       192.168.1.120
+db    IN  A       192.168.1.130
+openshift    IN  A       192.168.1.150
+pierce-printer    IN  A       192.168.1.250
+*    IN  cname     infra1

@@ -1,0 +1,28 @@
+$TTL 86400
+@   IN  SOA     primary.pierce.home. root.pierce.home. (
+2014112511  ;Serial
+3600        ;Refresh
+1800        ;Retry
+604800      ;Expire
+86400       ;Minimum TTL
+)
+;Name Server Information
+@ IN  NS      master.pierce.home.
+dns IN A 192.168.1.200
+;Reverse lookup for Name Server
+200        IN  PTR     dns.pierce.home.
+;PTR Record IP address to HostName
+100      IN  PTR     r900.pierce.home.
+101      IN  PTR     homestore.pierce.home.
+135     IN  PTR     ansible.pierce.home.
+140     IN  PTR     master.pierce.home.
+141     IN  PTR     app1.pierce.home.
+142     IN  PTR     app2.pierce.home.
+143     IN  PTR     app3.pierce.home.
+145     IN  PTR     infra1.pierce.home.
+105      IN  PTR     web.pierce.home.
+110      IN  PTR     docker.pierce.home.
+120      IN  PTR     jenkins.pierce.home.
+130      IN  PTR     db.pierce.home.
+150      IN  PTR     openshift.pierce.home.
+250     IN  PTR     pierce-printer.pierce.home.
